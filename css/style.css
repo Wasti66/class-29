@@ -1,0 +1,428 @@
+/* global css */
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body{
+	font-family:sans-serif;
+}
+h1{
+	color:black;
+	font-size:2.25rem;
+	text-align:center;
+	text-transform:uppercase;
+}
+h6{
+	color:#5a5acade;;
+	font-size:1.22rem;
+	text-align:center;
+}
+p{
+	color:#808080a1;
+	line-height: 1.5;
+	font-size: 1rem;
+	text-align: center;
+}
+section{
+	padding-top:100px;
+	padding-bottom:50px;
+}
+.container{
+	width:940px;
+	margin:0 auto;
+	overflow:hidden;
+	text-align:center;
+}
+.col-33{
+	width:33.33%;
+	float:left;
+	text-align:center;
+}
+.col-25{
+	width:25%;
+	float:left;
+	text-align:center;
+}
+.col-50{
+	width:50%;
+	float:left;
+	text-align:center;
+}
+.content{
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:5px;
+}
+i{
+	font-size:2rem;
+	color:yellow;
+}
+i:hover{
+	color:blue;
+}
+.btn{
+	padding:10px 25px;
+	background-color:#5b98f3;
+	border:0px;
+	border-radius:25px;
+	font-size:.95rem;
+	text-transform:uppercase;
+	color:white;
+}
+/* header part */
+header{
+	padding-top:15px;
+	padding-bottom:5px;
+	width:100%;
+	position:fixed;
+	background-color:#0000001c;
+	overflow:hidden;
+	z-index:99;
+}
+.company{
+	padding-left:35px;
+	float:left;
+}
+.company img{
+	float:left;
+	display:block;
+}
+.company h2{
+	float:left;
+	color:white;
+	font-size:1.5rem;
+	text-transform:uppercase;
+	padding:5px;
+}
+/*--manubar start-- */
+#main-manu{
+	padding-right:35px;
+	float:right;
+	padding-top:10px;
+	padding-right:5px;
+}
+#mobil-icon{
+	
+	display:none;
+}
+#main-manu ul{
+	list-style-type:none;
+}
+#main-manu ul li{
+	float:left;
+	margin:auto 5px;
+}
+#main-manu ul li a{
+	text-decoration:none;
+	padding:10px 5px;
+	text-transform:uppercase;
+	color:white;
+}
+#main-manu ul li a:hover{
+	background-color:black;
+	color:#5b98f3;
+}	
+.active a{
+	background-color:black;
+	color:#5b98f3 ! important;
+}	
+/* home part */
+#home{
+	background-image:url('../image/home.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding-bottom:0px;
+}
+#home p{
+	text-align:left;
+	color:yellow;
+	font-size:1rem;
+	text-transform:uppercase;
+}
+#home h6{
+	color:white;
+	font-size:1.25rem;
+	text-transform:uppercase;
+	text-align:left;
+}
+#home h2{
+	color:yellow;
+	font-size:2rem;
+	text-transform:uppercase;
+	margin-bottom:10px;
+}
+#home .author_text{
+	text-align:left;
+	margin-top:100px;
+}
+#home img{
+	height:250px;
+	width:200px;
+	padding-top:60px;
+}
+/* about me part */
+#progress .col-33{
+	margin-top:10px;
+	margin-bottom:20px;
+}
+#progress h5{
+	text-align:left;
+	text-transform:uppercase;
+	color:#757070;
+}
+.progressbar{
+	height:10px;
+	width:100%;
+	background-color:#d2cccc87;
+	border-radius:5px;
+	margin:10px auto;
+}
+.progress-achieve{
+	height:10px;
+	width:100%;
+	background-color:yellow;
+	border-radius:5px;
+}
+/* service part */
+#service{
+	background-image:url('../image/service3.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+#service h3{
+	margin-top:25;
+	margin-bottom:25px;
+	text-transform:uppercase;
+	color:white;
+	font-size:.90rem;
+}
+#service p{
+	color:white;
+}
+#service .content{
+	background-color:#ffffff30;
+	border-radius:5px;
+	padding:55px;
+}
+#service .content:hover{
+	background-color:tomato;
+}
+/* project part * */
+#project img{
+	height:250px;
+	width:100%;
+}
+#project .content{
+	position:relative;
+}
+#project .overly{
+	position:absolute;
+	bottom:10px;
+	background-color:black;
+	left:10px;
+	right:10px;
+	padding:15px;
+	color:white;
+	display:none;
+}
+#project .content:hover .overly{
+	display:block;
+}
+#project .overly:hover{
+	background-color:red;
+}
+/*review  part*/
+#review{
+	background-image:url('../image/revier5.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#review h3{
+	font-size:1.5rem;
+	color:white;
+	margin:25px auto 30px;
+}
+#review h5{
+	color:white;
+	font-size:1rem;
+}
+/*contact  part*/
+#contact{
+	background-image:url('../image/service1.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+#contact h1{
+	color:white;
+	margin-bottom:35px;
+}
+#contact form input,#contact form textarea{
+	width:100%;
+	font-size:1rem;
+	padding:5px;
+	background-color:transparent;
+	margin-bottom:15px;
+	border:1px solid white;
+	box-sizing:border-box;
+	border-radius:5px;
+}
+#contact textarea{
+	height:125px;
+}
+#contact button{
+	border-radius:10px;
+	background-color:#216fe2;
+}
+#address{
+	margin:50px auto 15px;
+}
+#address p{
+	font-size:.9rem;
+	color:white;
+	margin-top:25px;
+}
+/* footer part */
+footer{
+	overflow:hidden;
+	background-color:#35323226;
+	padding:25px 0;
+}
+#copy{
+	float:left;
+	color:#484848;
+	margin:10px;
+}
+#social{
+	float:right;
+}
+#social ul{
+	list-style:none;
+	
+}
+#social ul li{
+	float:left;
+	margin:auto 10px;
+	height:40px;
+	width:40px;
+	border:2px solid #484848;
+	border-radius:50%;
+	padding-top:10px;
+	text-align:center;
+}
+#social ul li:last-child{
+	margin-right:0px;
+}
+#social ul li a i{
+	font-size:1.2rem;
+	color: #484848;
+}
+.upper{
+	position:fixed;
+	right:5px;
+	height:30px;
+	width:20px;
+	text-align:center;
+	bottom:25px;
+	background-color:gray;
+	padding-top:10px;
+	display:none;
+}
+.upper i{
+	font-size:1rem;
+}
+/* device view */
+@media(max-width:940px){
+	.container{
+		width:100%;
+	}
+}
+@media(max-width:576px){
+	.col-25 .col-33 .col-50{
+		width:100%;
+	}
+	header{
+		background-color:#000000b8;
+	}
+	.company{
+		padding-left:15px;
+	}
+	.company img{
+		
+		height:50px;
+	}
+	/*manubar part */
+	#mobil-icon{
+       display:block; 
+       position:absolute;
+       top:25px;
+       right:15px;	   
+	}
+	#main-manu{
+		width:100%;
+		padding-right:0;
+		margin-top:0;
+	}
+	#main-manu ul li{
+		float:none;
+	}
+	#main-manu ul li a{
+		display:block;
+	}
+	#main-manu ul li a:hover, .active a{
+		background-color: #ececec;
+        color: #191919 ! important;
+	}
+	/* home part */
+	#home .col-50{
+		width:50%;
+	}
+	#home img{
+		height:175px;
+	}
+	#home .author_text{
+		margin-top:25px;
+	}
+	#home p{
+		font-size:.75rem;
+	}
+	#home h6{
+		font-size:.9rem;
+	}
+	#home h2{
+		font-size:1.25rem;
+		margin-bottom:10px;
+	}
+	#home .btn{
+		
+		padding:7px 15px;
+	}
+	/* review part */
+	#review .col-25{
+		width:50%;
+	}
+	#review .content{
+		margin-top:30px;
+	}
+	/*footer part */
+	#copy, #social{
+		float:none;
+		text-align:center;
+	}
+	#social ul{
+		margin-left:25%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
