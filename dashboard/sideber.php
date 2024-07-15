@@ -8,7 +8,7 @@
 	  <ul class="nav flex-column">
 		<li class="nav-item">
 		  <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="dashboard.php">
-			<i class="fas fa-home"></i>
+			<i class="fas fa-tachometer-alt"></i>
 			Dashboard
 		  </a>
 		</li>
@@ -17,6 +17,13 @@
 	  <hr class="my-3">
 
 	  <ul class="nav flex-column mb-auto">
+		<!-- === about us === -->
+		<li class="nav-item">
+		  <a class="nav-link d-flex align-items-center gap-2" href="home.php">
+			<i class="fas fa-home"></i>
+			Home
+		  </a>
+		</li>
 		<!-- === about us === -->
 		<li class="nav-item">
 		  <a class="nav-link d-flex align-items-center gap-2" href="about_us.php">
@@ -45,11 +52,25 @@
 			Progress
 		  </a>
 		</li>
+		<!-- === status === -->
+		<li class="nav-item">
+		  <a class="nav-link d-flex align-items-center gap-2" href="contact_info.php">
+			<i class="fas fa-address-card"></i>
+			Contact
+		  </a>
+		</li>
 		<!-- === Settings/profile === -->
 		<li class="nav-item">
 		  <a class="nav-link d-flex align-items-center gap-2" href="profiles.php">
 			<i class="fas fa-cog"></i>
 			Settings
+		  </a>
+		</li>
+		<!-- === footer === -->
+		<li class="nav-item">
+		  <a class="nav-link d-flex align-items-center gap-2" href="footer_section.php">
+			<i class="fas fa-sort-amount-down"></i>
+			Footer
 		  </a>
 		</li>
 		<li class="nav-item">

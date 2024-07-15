@@ -1,19 +1,20 @@
 
 <?php
-	
+	include('functions/contact_info_function.php');
 	if(isset($_GET['form-submit-btn'])){
 		$old = $_GET;
 		include('contact-form-action.php');
 	}
-	
+	$contact_view = contact_view();
+	$address_view = address_view();
 ?>
 
 <!--contact part--> 
 <section id="contact" class="bg-dark">
 	<div class="container">
 		<div class="text-center">
-			 <h6 class="text-primary mb-0 font-weigth-normal">Find me</h6>
-			 <h1 class="text-uppercase text-white mb-5">Contact me now</h1> 
+			 <h6 class="text-primary mb-0 font-weigth-normal"><?php echo $contact_view['title']??'section-title'?? '' ?></h6>
+			 <h1 class="text-uppercase text-white mb-5"><?php echo $contact_view['subtitle']??'section-subtitle'?? '' ?></h1> 
 			 <h5 class="text-uppercase text-warning"><?php echo $success?? ''; ?></h5> 
 		</div>				
 	  <form class="row g-2" name="contactForm" method="get">
@@ -63,18 +64,18 @@
 	  </form>
 	  <!--address part-->
 	  <div class="row mt-5 text-white" id="address">
-		  <div class="col-sm-4 text-center">  
-				  <h1 class="text-primary mb-3"><i class="fas fa-address-card"></i></h1>
-				  <p>Address<br>Baganbari,panirtank,tnagail-1990</p>
-		  </div>
-		  <div class="col-sm-4 text-center col-6">
-			  <h1 class="text-primary mb-3"><i class="fas fa-envelope-open-text"></i></h1>
-			  <p>Email<br>Email:purnota54321@gmail.com</p>
-		  </div>
-		  <div class="col-sm-4 text-center col-6">
-			  <h1 class="text-primary mb-3"><i class="fas fa-mobile-alt"></i></h1>
-			  <p>Phone<br>01875822367</p>				  
-		 </div>
+		  <?php
+			if(mysqli_num_rows($address_view) > 0){
+				while($data = mysqli_fetch_assoc($address_view)){
+				?>
+					<div class="col-sm-4 text-center">  
+					   <h1 class="text-primary mb-3"><i class="<?php echo $data['icon'];?>"></i></h1>
+					   <p><?php echo $data['content'];?></p>
+				     </div>
+				<?php	
+				}
+			}
+		  ?>
 	  </div>
 	 </div>			  
 </section>
